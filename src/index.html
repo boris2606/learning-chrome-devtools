@@ -13,16 +13,53 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed btn_accord_style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  <p class="header_name_item_stl"> Some text</p>
+                  <p class="header_name_item_stl"> Основи та команди </p>
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                 <article class="accordion_body">
-                    <p class="sec_tit_txt_acord"> Some TXT</p>
+                    <p class="sec_tit_txt_acord"> Основи </p>
                 </article>
               </div>
             </div>
-
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn_accord_style" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <p class="header_name_item_stl"> Програма для дебагу</p>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <article class="accordion_body">
+                        <div class="container">
+                            <p class="sec_tit_txt_acord">Калькулятор</p>
+                            <div class="wrapper_entry_numbers">
+                              <div>
+                                <input class="value_input" type="number" placeholder="Число 1" id="num1"/>
+                              </div>
+                          
+                              <div>
+                                <input class="value_input" type="number" placeholder="Число 2" id="num2"/>
+                              </div>
+                            </div>
+                            <p class="text_math_oper">Оберіть дію:</p>
+                            <div class="wrapper_math_op">
+                              <button class="math_op" id="add">+</button>
+                              <button class="math_op" id="sub">-</button>
+                              <button class="math_op" id="del">/</button>
+                              <button class="math_op" id="mnoz">*</button>
+                            </div>
+                            <div class="wrapper_result">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="card_title" id="output"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="clear"> Очистити</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
             <!-- Приклад елементу акордіону
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">

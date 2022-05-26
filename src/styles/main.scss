@@ -82,3 +82,76 @@ code{
         background-color: rgba(129, 129, 129, 0.17);
     }
 }
+// Стилі для програми
+.container{
+    background: rgba(155, 154, 154, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 600px;
+}
+.tit_txt_prog{
+    text-align: center;
+    font: 500 14px ;
+}
+.wrapper_entry_numbers,
+.wrapper_math_op{
+    display: flex;
+    justify-content: center;
+}
+.value_input{
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid rgba(155, 154, 154, 0.705);
+    padding: 5px 10px;
+}
+.text_math_oper{
+    margin-top: 20px;
+    font: 500 14px $f_c;
+    text-align: center;
+}
+.math_op{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    border: 0px solid;
+    color: rgb(97, 97, 97);
+    background: #dddcdcd8;
+    font: 800 14px $vk;
+    margin: 5px 2.5px;
+    transition: .5s all ease-in-out;
+    &:hover{
+        color: #fff;
+        background: #2c2c2ca2;
+    }
+}
+.card {
+    position: relative;
+    background-color: rgb(80, 79, 79);
+    border-radius: 0.25rem;
+    font: 400 14px $f_c;
+    color: #fff;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    display: none;
+    margin: 15px auto;
+}
+.card_title{
+    margin: 5px;
+}
+.clear{
+    padding: 5px 10px;
+    border: 0px solid ;
+    border-radius: 5px;
+    color: #fff;
+    background: #21212262;
+    margin: 20px auto;
+    display: block;
+    transition: .5s all ease-in-out;
+    text-transform: uppercase;
+
+    &:hover{
+        color: #fff;
+        background: #2c2c2ca2;
+    }
+}
