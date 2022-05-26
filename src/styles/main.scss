@@ -1,3 +1,84 @@
 @use 'reset';
 @use 'fonts';
 @import "~bootstrap/scss/bootstrap";
+
+// Шрифт
+$f_c: Comfortaa, sans-serif;
+$vk: Vollkorn, sans-serif;
+// Стиль виділення коду
+code{
+    font-size: 16px;
+    font-weight: 600;
+}
+.comment_code{
+    color: #21212262;
+}
+// Титульний текст 
+.tit_text_learn{
+    font: 600 25px $f_c ;
+    padding: 25px 0 25px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+// Стилі кнопки акорду та розділу
+.btn_accord_style{
+    background-color: #66666863;
+    &:not(.collapsed) {
+        color: #fff;
+        background-color: #6e6e6ed8;
+        box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    }
+    &:not(.collapsed)::after {
+        background: url('../img/chevron-down.svg') no-repeat center;
+        transform: rotate(-180deg);
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+.header_name_item_stl{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font: 800 17px $f_c ;
+    text-transform: uppercase;
+}
+// Стилі обгортки контенту акорду
+.accordion_body{
+    padding: 10px;
+}
+// Стилі елементів акорду
+.sec_tit_txt_acord{
+    text-align: center;
+    margin: 5px auto 15px;
+    width: 100%;
+    font: 700 15px $f_c;
+    text-transform: uppercase;
+    background: rgba(136, 136, 136, 0.3);
+    padding: 5px 0 5px;
+    border-radius: 5px;
+}
+.list_style_accord {
+    margin-bottom: 5px;
+    position: relative;
+    transition: .4s all ease-in-out;
+    padding: 3px 5px;
+    border-radius: 10px;
+
+    &:before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: url('../img/caret-right-fill.svg');
+        background-size: cover;
+        position: absolute;
+        left: -22px;
+        top: 6px;
+    
+        }
+    &:hover {
+        background-color: rgba(129, 129, 129, 0.17);
+    }
+}
