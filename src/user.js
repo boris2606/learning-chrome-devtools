@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const output = document.querySelector('#output')
   
     function getInputValues() {
-      const value1 = parseInt(num1.value)
+      const value1 = +num1.value
       const value2 = +num2.value
   
       return [value1, value2]
@@ -21,25 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
       const values = getInputValues()
       // console.log(values)
       const result = values[0] + values[1]
-      displayResult(result)
+      displayResult(result.toFixed(1))
     }
   
     function subHandler() {
       const values = getInputValues()
       const result = values[0] - values[1]
-      displayResult(result)
+      displayResult(result.toFixed(1))
     }
 
     function delHandler() {
         const values = getInputValues()
         const result = values[0] / values[1]
-        displayResult(result)
+        displayResult(result.toFixed(1))
     }
 
     function mnozHandler() {
         const values = getInputValues()
         const result = values[0] * values[1]
-        displayResult(result)
+        displayResult(result.toFixed(1))
     }
   
     function displayResult(result) {
